@@ -1,0 +1,6 @@
+---
+
+tmp: /tmp
+ssh_user: "astel"
+domain: "{{ vault_domain }}"
+vpn_port: "{{ vault_vpn_port }}"

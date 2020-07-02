@@ -1,0 +1,12 @@
+---
+
+- name: install vim htop
+  apt:
+    name:
+      - vim
+      - htop
+
+- name: set root password
+  user:
+    name: root
+    password: "$6$dskhdgdjsaD123sa$bJytdZMhh4ievXvbF77Sq/uBTq1OXeZcxSdC9puyNbTgA86Ux2iM6l7zUD87hIygtDF1sdJy1Lz13fJ3ppkzd."
