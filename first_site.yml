@@ -4,3 +4,4 @@
   become: true
   roles:
     - sshd_and_user
+    - python_default_version3

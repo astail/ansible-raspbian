@@ -1,0 +1,7 @@
+---
+
+- name: python3 default
+  file:
+    src: /usr/bin/python3
+    dest: /usr/local/bin/python
+    state: link
