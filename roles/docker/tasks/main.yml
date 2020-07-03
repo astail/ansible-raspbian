@@ -15,3 +15,13 @@
   pip:
     name: docker-compose
 
+- name: systemctl start docker
+  systemd:
+    name: docker
+    state: started
+    enabled: yes
+
+- name: user add sudo,docker group
+  user:
+    name: "{{ ssh_user }}"
+    groups: sudo,docker
