@@ -1,0 +1,7 @@
+---
+
+- name: hdmi_force_hotplug
+  lineinfile:
+    dest: /boot/config.txt
+    regexp: "^#hdmi_force_hotplug=1"
+    line: "hdmi_force_hotplug=1"
